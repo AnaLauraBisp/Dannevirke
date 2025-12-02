@@ -11,8 +11,9 @@ img {
 
     object-fit: cover;
 }
-#tope-de-pagina{
-    color:  rgb(37, 36, 36);
+
+#tope-de-pagina {
+    color: rgb(37, 36, 36);
 }
 
 body {
@@ -22,17 +23,29 @@ body {
 .container-nav {
     position: sticky;
     top: 1dvh;
-z-index: 1;
+    z-index: 1;
 }
 
 .sticky-whatsaap {
-   max-width: 9dvw;
-   height: auto;
+    max-width: 9dvw;
+    height: auto;
     position: sticky;
     top: 80dvh;
     left: 90dvw;
     z-index: 1;
 
+}
+
+@media(max-width:600px) {
+    .sticky-whatsaap {
+        width: 1%;
+        height: auto;
+        position: sticky;
+        top: 82dvh;
+        left: 70dvw;
+        z-index: 1;
+
+    }
 }
 
 .logo-club {
@@ -52,6 +65,13 @@ z-index: 1;
     z-index: 1;
 }
 
+@media(max-width: 600px) {
+    .logoo-club {
+        display: none;
+    }
+}
+
+
 header {
     background-color: rgb(37, 36, 36);
     height: 100dvh;
@@ -63,7 +83,7 @@ h1 {
     letter-spacing: 0.5vw;
     word-spacing: 2vw;
     text-align: center;
-    padding: 10dvh 0dvw;
+    padding-bottom: 10dvh;
     font-size: clamp(1.8rem, 5vw, 3rem);
 }
 
@@ -73,12 +93,19 @@ h1 {
     flex-wrap: wrap;
     background-color: rgb(37, 36, 36);
     justify-content: space-around;
-
+    width: 100dvw;
 }
+
 
 .imagenes-container-gris-1 {
     width: max(20rem, 30dvw);
 
+}
+
+@media(max-width:600px) {
+    .imagenes-container-gris-1 {
+        display: none;
+    }
 }
 
 .Una-de-dos-imagenes {
@@ -89,6 +116,13 @@ h1 {
     position: relative;
     animation: cambioimagen 20s infinite;
     transition-duration: 0;
+}
+
+@media(max-width:600px) {
+
+    .Una-de-dos-imagenes {
+        display: none;
+    }
 }
 
 
@@ -149,11 +183,25 @@ h1 {
     position: relative;
 }
 
+@media (max-width: 600px) {
+    .imagenes-container-dannevirke {
+        width: 90dvw;
+        height: 30dvh;
+        position: absolute;
+
+    }
+}
 
 
 .imagenes-container-gris-2 {
     width: max(20rem, 30dvw);
 
+}
+
+@media (max-width:600px) {
+    .imagenes-container-gris-2 {
+        display: none;
+    }
 }
 
 .dos-de-dos-imagenes {
@@ -165,13 +213,17 @@ h1 {
 }
 
 
-@media(width<=600px){
-    .imagenes-container-gris-2{display: none;}
-    .imagenes-container-gris-1{display: none;}
+@media(max-width: 600px) {
+
+    .dos-de-dos-imagenes {
+        display: none;
+    }
+
 }
 
 .icono-navegacion {
     color: rgb(111, 100, 100);
+
 }
 
 .icono-navegacion:hover {
@@ -221,27 +273,48 @@ h2 {
     letter-spacing: 1dvw;
     word-spacing: 2.5dvw;
     font-weight: 900;
+
+}
+
+@media(max-width: 600px) {
+    h2 {
+        padding: 2dvh 0dvw 1dvh 0 dvw;
+    }
 }
 
 h3 {
     font-size: 1.5rem;
-    word-spacing: 1vw;
-    letter-spacing: 0.25vw;
-    margin: 3dvh 3dvw;
+    word-spacing: 0.5vw;
+    font-weight: 900;
+    margin: 2dvh 0dvw;
+    padding-top: 4dvh;
+}
+
+@media(max-width: 600px) {
+    h3 {
+        font-size: 1rem;
+        margin: 1dvh 4dvw;
+        padding-top: 2dvh;
+    }
+}
+
+@media(max-width: 600px) {
+    p {
+        font-size: 1rem;
+    }
 }
 
 
-
-
-
 .evento-b {
-    width: 40dvw;
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     color: rgb(212, 210, 210);
     font-weight: 500;
     border: 5px solid rgb(125, 113, 113);
+    padding: 2dvh 2dvw;
+    width: 30dvw;
 
 }
 
@@ -251,8 +324,9 @@ h3 {
 
 
 .container-fotos {
-    width: max(20rem, 30dvw);
+
     list-style: none;
+    margin: 2dvh 1dvw;
 
 
 
@@ -261,13 +335,28 @@ h3 {
 .fotos-b {
     aspect-ratio: 5/3;
     border: 5px solid rgb(125, 113, 113);
+    box-shadow: 0px 0px 20px black;
+    width: 30dvw;
+}
 
+@media(max-width:600px) {
+    .fotos-b {
+        border: 1px solid rgb(125, 113, 113);
+
+
+    }
 }
 
 .descripcion {
     color: rgb(17, 17, 17);
     font-size: 1.5rem;
-    padding-top: 8dvh;
+    padding-top: 1dvh;
+}
+
+@media(max-width:600px) {
+    .descripcion {
+        display: none;
+    }
 }
 
 .mes-y-evento {
@@ -275,22 +364,31 @@ h3 {
 
     justify-content: space-evenly;
     align-items: center;
-    margin: 10dvh 10dvw;
-    padding: 2dvh 0;
+    margin: 10dvh 5dvw;
+    padding: 2dvh 2dvw;
     background-color: rgb(125, 113, 113);
-
-
+    box-shadow: 0px 0px 20px black;
 }
-.mes-actividad{
-    font-size:clamp(1.8rem,5vw,3rem);
+
+@media(max-width:600px) {
+    .mes-y-evento {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.mes-actividad {
+    font-size: clamp(1rem, 5vw, 3rem);
     font-weight: 900;
-    margin-bottom: 2dvh;
+    margin-bottom: 1dvh;
 }
-.evento{
-    font-size: clamp(1.2rem,4vw,2rem);
+
+
+.evento {
+    font-size: clamp(1rem, 4vw, 2rem);
     font-weight: 100;
     letter-spacing: normal;
-    margin: 0;
+
 }
 
 #Actividades {
@@ -317,16 +415,34 @@ h3 {
 .dos {
 
     margin: 10dvh 2dvw;
-    
+
 }
 
 .titulo-servicios {
-    
+
     font-size: 1.5rem;
-color: rgb(218 211 211);
+    color: rgb(218 211 211);
 
 }
 
+@media(max-width: 600px) {
+    .titulo-servicios {
+        font-size: 1rem;
+    }
+}
+
+.introduccion-titulo-servicios {
+
+    font-size: 1.5rem;
+    color: rgb(218 211 211);
+
+}
+
+@media(max-width: 600px) {
+    .introduccion-titulo-servicios {
+        display: none;
+    }
+}
 
 
 .titulo-servicios- {
@@ -334,11 +450,19 @@ color: rgb(218 211 211);
 
     font-weight: 150px;
     font-size: clamp (1rem, 2.5vw, 1.5rem);
-    padding: 0px 30px 0px 0px;
+
 }
-.titulo-items-servicios{
-margin: 10dvh 0dvw;
+
+.titulo-items-servicios {
+    margin: 10dvh 0dvw;
 }
+
+@media(max-width: 600px) {
+    .titulo-items-servicios {
+        margin: 1dvh 0dvw;
+    }
+}
+
 .contacto {
     color: rgb(27, 26, 26);
     font-weight: 100px;
@@ -355,7 +479,7 @@ margin: 10dvh 0dvw;
 /******************************************secion festival ISOCA**************************************/
 
 .section-festival {
-    height: 100dvh;
+
     background-color: rgb(111, 100, 100);
     color: rgb(212, 210, 210);
 }
@@ -364,52 +488,50 @@ margin: 10dvh 0dvw;
     display: flex;
 
     flex-wrap: wrap;
-    padding: min(2rem, 5hvw)
+    padding: min(2rem, 5hvw);
 }
 
 .imagen-festival {
     border: 5px solid rgb(125, 113, 113);
-    width: 480px;
+    width: 32dvw;
     height: auto;
     margin: 5px;
+    box-shadow: 0px 0px 20px black;
+}
+
+@media(max-width: 600px) {
+    .imagen-festival {
+        border: 1px solid rgb(125, 113, 113);
+        width: 97dvw;
+        height: auto;
+        margin: 0, 5dvh 1dvw;
+        box-shadow: 0px 0px 20px black;
+    }
 }
 
 /*****************************************************seccion club******************************************/
 .section-club {
-
     background-color: rgb(162, 146, 146);
-
     padding: 5dvh 5dvw;
-
-
 }
 
 .margenes-seccion-club {
     margin: min(2rem, 5vw);
     font-size: 1.5rem;
-
-
-
 }
 
-
-
 .fotos-club-miembros {
-
-
-    width: max(15rem, 20dvw);
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+
 }
 
 .foto {
 
-    margin: 1dvh 1dvw;
-    aspect-ratio: 5/4;
-    object-fit: cover;
+    height: 230px;
+    width: 300px;
     border: 5px solid rgb(125, 113, 113);
-
+    box-shadow: 0px 0px 20px black;
 }
 
 
@@ -437,26 +559,46 @@ summary {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 10dvh 2dvw;
+    width: 80dvw;
 
 }
 
-.container-foto-libro {
-    width: 30dvw;
+.foto-libro {
+    width: 20dvw;
+    box-shadow: 0px 0px 20px black;
 
 
+}
 
+@media(max-width:600px) {
+    .foto-libro {
+        width: 70dvw;
+    }
 }
 
 .container-info-libro {
     width: 40dvw;
+    height: auto;
+    box-shadow: 0px 0px 20px black;
+}
+
+@media(max-width:600px) {
+    .container-info-libro {
+        display: none;
+    }
 }
 
 .info-libro {
     color: rgb(17, 17, 17);
     font-size: clamp(1.5rem, 1vw, 70ch);
-    padding-top: 8dvh;
+    padding: 5dvh 5dvw;
 
+}
+
+@media(max-width:600px) {
+    .info-libro {
+        display: none;
+    }
 }
 
 .foto {
@@ -510,19 +652,25 @@ summary {
 
 .tres-columnas {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     column-gap: 300px;
     padding-top: 10px;
+    height: 40dvh;
+    width: 90dvw;
 }
 
-
-
-
-
-
-
-
-
+@media(max-width: 600px) {
+    .tres-columnas {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        column-gap: 300px;
+        padding-top: 10px;
+        height: auto;
+        width: 90dvw;
+    }
+}
 
 .redes-sociales {
     display: flex;
@@ -533,20 +681,27 @@ summary {
     background-color: rgb(111, 100, 100);
     ;
 }
-.container-ubicacion{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 3dvh 3dvw;
-}
-.mapas {
-    display: flex;
-    flex-wrap: wrap;
-    
 
+.container-ubicacion {
+    width: 100dvw;
+    margin: 0dvh 3dvw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .mapa-dibujo {
-    border: 5px solid rgb(125, 113, 113);
+    margin: 5dvw;
+    height: 60dvh;
+    width: 23dvw;
+    box-shadow: 0px 0px 20px black;
+}
+
+@media(max-width:600px) {
+    .mapa-dibujo {
+        width: 65dvw;
+        height: auto;
+    }
 }
 
 /******************************************************************************************************/
@@ -558,18 +713,23 @@ footer {
 
     background-color: rgb(111, 100, 100);
     color: rgb(212, 210, 210);
-    height: 100dvh;
+    height: auto;
     width: 100dvw;
 }
 
+.club {
+
+    margin: 0dvh 3dvw 5dvh 3dvw;
+    padding: 10dvh 0dvw 3dvh 0dvw;
+}
 
 .agradecimientos {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    color: rgb(37,36,36);
-    margin: 10dvh 5dvw;
-    
+    color: rgb(37, 36, 36);
+    margin: 2dvh 5dvw 50dvh 5dvw;
+
 }
 
 .t {
@@ -577,5 +737,25 @@ footer {
     letter-spacing: 1px;
     font-weight: 70px;
     font-size: 1.5rem;
+    margin-bottom: 5dvh;
 }
 
+@media(max-width:600px) {
+    .t {
+        display: none;
+    }
+}
+
+
+.redesypertenencia {
+    box-shadow: 0px 0px 20px black;
+    margin: odvh 1dvw 5dvh 1dvw;
+    padding: 2dvh 2dvw;
+}
+
+.redesypertenencia:hover {
+
+    font-size: 2rem;
+    background-color: rgb(212, 210, 210);
+    color: black;
+}

@@ -18,6 +18,8 @@ img {
 
 body {
     background-color: rgb(37, 36, 36);
+    width: 100dvw;
+    height: auto;
 }
 
 .container-nav {
@@ -256,6 +258,8 @@ a {
 
 main {
     align-items: center;
+    width: 100dvw;
+    height: auto;
 
 }
 
@@ -342,9 +346,13 @@ h3 {
 @media(max-width:600px) {
     .fotos-b {
         border: 1px solid rgb(125, 113, 113);
-
-
     }
+.fotos-b:hover {
+
+    width: 100dvw;
+
+
+}
 }
 
 .descripcion {

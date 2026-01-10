@@ -368,13 +368,19 @@ h3 {
    z-index: 1;
     width: 100dvw;
     height: auto;
-  
-   
-
 
 }
 }
-
+.fechas{
+     color: rgb(17, 17, 17);
+    font-size: 1.5rem;
+    padding-top: 1dvh;
+}
+@media(max-width:600px) {
+    .fechas{
+        font-size: 1rem;
+    }
+}
 .descripcion {
     color: rgb(17, 17, 17);
     font-size: 1.5rem;

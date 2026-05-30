@@ -250,8 +250,19 @@ h1 {
 
 
 }
+@media(max-width: 600px) {
+    .barra-navegacion {
+        background-color: rgb(173, 4, 4);
 
+    }
+    .icono-navegacion {
+        color: black;
+.icono-navegacion:hover {
+    color: rgb(48, 48, 139);
 
+}
+    }
+}
 
 a {
     color: rgb(111, 100, 100);

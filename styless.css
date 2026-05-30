@@ -356,13 +356,13 @@ background-color: blue;
 @media(max-width:600px) {
     .container-fotos{
        
-        margin: 0dvh 0dvw;
+        margin: 1dvh 1dvw;
         width:auto;
     
   
 
 
-    height: 230px;
+    height: 60%;
     
     }
 

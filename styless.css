@@ -257,10 +257,7 @@ h1 {
     }
     .icono-navegacion {
         color: black;
-.icono-navegacion:hover {
-    color: rgb(48, 48, 139);
 
-}
     }
 }
 
@@ -705,7 +702,9 @@ height: 80dvh;
         padding-top: 2dvh;
     }
 }
-
+.letras-rojas{
+    color: rgb(173, 4, 4);
+}
 .contacto {
     color: rgb(27, 26, 26);
     font-weight: 100px;

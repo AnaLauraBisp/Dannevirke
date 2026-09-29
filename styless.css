@@ -692,7 +692,7 @@ height: 80dvh;
     margin: 2dvh 2dvw;
     padding: 4dvh 4dvw;
     
-    box-shadow: 0px 0px 10px white;
+    box-shadow: 0px 0px 10px rgb(173, 4, 4);
 }
 
 @media(max-width: 600px) {
@@ -703,7 +703,7 @@ height: 80dvh;
     }
 }
 .letras-rojas{
-    color: rgb(173, 4, 4);
+   color: rgb(173, 4, 4);
 }
 .contacto {
     color: rgb(27, 26, 26);
